@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>menghitung luas dan keliling persegi</h1>
+    </center>
+    <table align="left">
+        <label for="pjg">panjang</label>
+        <input type="text" name="lebar" id="pjg"><br>
+        <br>
+        <label for="lbr">lebar :</label>
+        <input type="text" name="lebar" id="lbr"><br>
+        <br>
+        <input type="button" id="htg" onclick="hitung()" value="Hitung">
+        <br>
+        <tfoot>
+            <label for="hsl">luas :</label>
+            <td><input type="text" id="hsl"></td><br>
+            <label for="hsl_ke1">keliling :</label>
+            <td><input type="text" id="hsl_ke1"></td>
+        </tfoot>
+    </table>
+  <script>
+      var luas;
+      var keliling;
+      var sisi;
+
+      function hitung(){
+          sisi = parseFloat(document.getElementById("pjg").value);
+          luas = sisi * sisi;
+          keliling = luas * 4;
+          keliling = 4 * sisi;
+          document.getElementById("hsl").value = luas;
+          document.getElementById("hsl_ke1").value = keliling;
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="gt">
+    <input type="button" id="gt" onclick="grd()" value="oke">
+    <h1><address>menentukan grade nilai</address></h1>
+    <script>
+        function grd(){
+
+        
+        var x = document.getElementById(grd);
+        if(x >= 90 && x < 101){
+            document.write("nilai anda : a")
+        }else if(x >= 80 && x < 89){
+            document.write("nilai anda : b")
+        }else if(x >= 60 && x < 79){
+            document.write("nilai anda : c")
+        }else if(x >= 40 && x < 59){
+            document.write("nilai anda : d")
+        }else if(x < 39){
+            document.write("nilai anda : e")
+        }else if(x > 101){  
+            alert("silahkan masukan nilai anda degan benar !")  
+        }
+        
+
+        }
+    </script>
+</body>
+</html>
